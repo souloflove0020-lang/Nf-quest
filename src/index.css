@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --surface: #f6f8f7;
+  --surface-alt: #eef4f0;
+  --border: #e2e8e3;
+  --border-strong: #c9d4cc;
+  --ink: #12160f;
+  --ink-soft: #4b564d;
+  --muted: #7c8880;
+  --green: #0c7a4b;
+  --green-dark: #095c3a;
+  --green-tint: #e5f4ec;
+  --green-tint-strong: #c9ebd9;
+  --black: #14171a;
+  --gold: #96751f;
+  --gold-tint: #f6efdd;
+  --red: #a3372c;
+  --red-tint: #fbe9e6;
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --shadow-card: 0 1px 2px rgba(18,22,15,0.04), 0 1px 0 rgba(18,22,15,0.03);
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #e8ece9;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom sleek scrollbar for mobile and desktop */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f8f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9d4cc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0c7a4b;
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+}

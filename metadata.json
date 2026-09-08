@@ -1,0 +1,6 @@
+{
+  "name": "Quest Points Tracker",
+  "description": "Multi-Gmail daily quest, points, and task tracking web app with Supabase cloud database, spreadsheet work history, and responsive layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
